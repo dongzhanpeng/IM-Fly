@@ -1,0 +1,7 @@
+url: http://www.dongzhanpeng.com
+baseurl: "/IM-Fly"
+github: https://github.com/dongzhanpeng/
+resume_site: http://www.dongzhanpeng.com/Resume.io/
+description:保持热爱，奔赴星海。
+github_username: dongzhanpeng
+plugins: [jekyll-paginate]
