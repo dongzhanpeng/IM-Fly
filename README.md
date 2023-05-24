@@ -17,7 +17,7 @@
 [![GitHub license](https://img.shields.io/github/license/esofar/cnblogs-theme-silence.svg)](https://github.com/BNDong/Cnblogs-Theme-SimpleMemory/blob/master/LICENSE)
 [![compatibility](https://camo.githubusercontent.com/31ac3f0ce805dc34a29b615131caa26cbf4dc127/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f62726f777365722d2532306368726f6d6525323025374325323066697265666f782532302537432532306f706572612532302537432532307361666172692532302537432532306965253230253345253344253230392d6c69676874677265792e737667)](https://github.com/BNDong/Cnblogs-Theme-SimpleMemory)
 
-# Silence
+# Silence1
 
 📖 本主题以阅读为核心，美化博客园的显示效果，提高用户体验。 
 
