@@ -63,8 +63,8 @@ export default function main() {
 	}
 
 	function toggleMenu() {
-		// if( isAnimating ) return false;
-		// isAnimating = true;
+		if( isAnimating ) return false;
+		isAnimating = true;
 		$('.menu-wrap').show();
 
 		let homeMarginLeft = $('#home').css('margin-left');
@@ -74,41 +74,41 @@ export default function main() {
 
 			$(bodyEl).removeClass('show-menu');
 
-			//setTimeout( "$('body').removeClass('show-menu');", 25);
+			setTimeout( "$('body').removeClass('show-menu');", 25);
 
 			$('#content-wrap').fadeOut(300);
 			$(bodyEl).css('overflow', 'auto');
 			$("#mainContent").off("touchmove");
 
 			// animate path
-			// setTimeout( function() {
+			setTimeout( function() {
 				// reset path
 				path.attr( 'd', initialPath );
 				isAnimating = false;
-			// }, 300 );
+			}, 300 );
 		}
 		else {
 			classie.add( bodyEl, 'show-menu' );
 
 			// animate path
-			// let pos = 0,
-			// 	nextStep = function( pos ) {
-			// 		if( pos > stepsTotal - 1 ) {
-			// 			isAnimating = false;
-			// 			return;
-			// 		}
-			// 		path.animate( { 'path' : steps[pos] }, pos === 0 ? 400 : 500, pos === 0 ? mina.easein : mina.elastic, function() { nextStep(pos); } );
-			// 		pos++;
-			// 	};
+			let pos = 0,
+				nextStep = function( pos ) {
+					if( pos > stepsTotal - 1 ) {
+						isAnimating = false;
+						return;
+					}
+					path.animate( { 'path' : steps[pos] }, pos === 0 ? 400 : 500, pos === 0 ? mina.easein : mina.elastic, function() { nextStep(pos); } );
+					pos++;
+				};
 
-			// $('#content-wrap').fadeIn(300);
+			$('#content-wrap').fadeIn(300);
 			$('#content-wrap').show();
 			$('body').css('overflow', 'hidden');
 
 			// 初始化滚动条到顶部位置
 			myOptiscrollInstance.scrollTo(false, 'top');
 
-			// nextStep(pos);
+			nextStep(pos);
 		}
 		isOpen = !isOpen;
 	}
