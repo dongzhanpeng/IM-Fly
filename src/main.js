@@ -1,7 +1,7 @@
 /**
- * UPDATES AND DOCS AT: https://github.com/BNDong
- * https://www.cnblogs.com/bndong/
- * @author: BNDong, dbnuo@foxmail.com
+ * UPDATES AND DOCS AT: https://github.com/dongzhanpeng/
+ * https://www.cnblogs.com/IM-Fly
+ * @author: Fly
  * ----------------------------------------------
  * @describe: 主程序文件
  */
