@@ -1,7 +1,7 @@
 /**
- * UPDATES AND DOCS AT: https://github.com/dongzhanpeng/
- * https://www.cnblogs.com/IM-Fly
- * @author: Fly
+ * UPDATES AND DOCS AT: https://github.com/BNDong
+ * https://www.cnblogs.com/bndong/
+ * @author: BNDong, dbnuo@foxmail.com
  * ----------------------------------------------
  * @describe: 侧边栏处理
  */
@@ -74,41 +74,41 @@ export default function main() {
 
 			$(bodyEl).removeClass('show-menu');
 
-			setTimeout( "$('body').removeClass('show-menu');", 25);
+			//setTimeout( "$('body').removeClass('show-menu');", 25);
 
 			$('#content-wrap').fadeOut(300);
 			$(bodyEl).css('overflow', 'auto');
 			$("#mainContent").off("touchmove");
 
 			// animate path
-			setTimeout( function() {
+			// setTimeout( function() {
 				// reset path
 				path.attr( 'd', initialPath );
 				isAnimating = false;
-			}, 300 );
+			// }, 300 );
 		}
 		else {
 			classie.add( bodyEl, 'show-menu' );
 
 			// animate path
-			let pos = 0,
-				nextStep = function( pos ) {
-					if( pos > stepsTotal - 1 ) {
-						isAnimating = false;
-						return;
-					}
-					path.animate( { 'path' : steps[pos] }, pos === 0 ? 400 : 500, pos === 0 ? mina.easein : mina.elastic, function() { nextStep(pos); } );
-					pos++;
-				};
+			// let pos = 0,
+			// 	nextStep = function( pos ) {
+			// 		if( pos > stepsTotal - 1 ) {
+			// 			isAnimating = false;
+			// 			return;
+			// 		}
+			// 		path.animate( { 'path' : steps[pos] }, pos === 0 ? 400 : 500, pos === 0 ? mina.easein : mina.elastic, function() { nextStep(pos); } );
+			// 		pos++;
+			// 	};
 
-			$('#content-wrap').fadeIn(300);
+			// $('#content-wrap').fadeIn(300);
 			$('#content-wrap').show();
 			$('body').css('overflow', 'hidden');
 
 			// 初始化滚动条到顶部位置
 			myOptiscrollInstance.scrollTo(false, 'top');
 
-			nextStep(pos);
+			// nextStep(pos);
 		}
 		isOpen = !isOpen;
 	}

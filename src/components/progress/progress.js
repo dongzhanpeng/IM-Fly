@@ -1,7 +1,7 @@
 /**
- * UPDATES AND DOCS AT: https://github.com/dongzhanpeng/
- * https://www.cnblogs.com/IM-Fly
- * @author: Fly
+ * UPDATES AND DOCS AT: https://github.com/BNDong
+ * https://www.cnblogs.com/bndong/
+ * @author: BNDong, dbnuo@foxmail.com
  * ----------------------------------------------
  * @describe: 头部进度条处理
  */

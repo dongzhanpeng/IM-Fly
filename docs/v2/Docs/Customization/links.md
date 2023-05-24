@@ -1,6 +1,6 @@
 # 友链
 
-样式参考：[https://www.cnblogs.com/IM-Flyp/14708992.html](https://www.cnblogs.com/IM-Flyp/14708992.html)
+样式参考：[https://www.cnblogs.com/bndong/p/14708992.html](https://www.cnblogs.com/bndong/p/14708992.html)
 
 ## 配置方式
 
